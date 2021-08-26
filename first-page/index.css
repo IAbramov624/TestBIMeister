@@ -1,0 +1,253 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+	margin: 0;
+}
+
+.wrapper_main_title {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.main_title {
+    width: 1440px;
+    height: 800px;
+    background: #2A2E38;
+    margin: auto;
+    position: relative;
+}
+
+.start_button {
+    width: 204px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 80px;
+    font-family: 'Quicksand', sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: hidden;
+}
+
+.start_button:before {
+    height: 200px;
+    width: 200px;
+    content: "";
+    background: #E5E5E5;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    top: -30%;
+    transform: skewX(-135deg);
+    transition: all 0.2s;
+}
+
+.start_button:hover:before {
+    width: 450px;
+    z-index: -1;
+}
+
+.start_button:hover {
+    color: #2A2E38;
+    cursor: pointer;
+}
+
+.wrapper_main_bcg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    transition: all 0.2s;
+}
+
+.overlay {
+    width: 1440px;
+    height: 800px;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    background: #2A2E38;
+}
+
+.main_bcg {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/bcg-image.jpg") center no-repeat;
+    opacity: 26%;
+    background-size: cover;
+    background-blend-mode: color;
+    margin: auto;
+    position: relative;
+}
+
+.back_link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Quicksand', sans-serif;  /* !!! Проверить шрифт*/
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 24px;
+    left: 1261px;
+
+}
+
+.blocks {
+    display: flex;
+    width: calc(100% - 48px);
+    position: absolute;
+    justify-content: space-between;
+    top: 550px;
+    left: 24px;
+}
+
+.block {
+    width: 336px;
+    height: 226px;
+    background: #2A2E38;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 24px;
+    padding-left: 24px;
+    color: #FFFFFF;
+}
+
+.useless {
+    display: none;
+    position: absolute;
+    top: 62px;
+    opacity: 50%;
+}
+
+.block:hover {
+    cursor: pointer;
+    background: #3E65C2;
+}
+
+.block:hover .useless {
+    display: block;
+}
+
+.block_expanded-main {
+    width: calc(100% - 48px);
+    height: calc(100% - 132px);
+    border: 1px solid rgba(150, 150, 150, 0.4);  
+    background: #2A2E38;
+    position: absolute;
+    top: 108px;
+    left: 24px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    display: none;
+}
+
+.block_expanded-title {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: none;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.text {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.animate-top {
+    transition: opacity 2s;
+    animation: animation-to-top;
+    animation-duration: 0.2s;
+}
+
+.animate-height {
+    animation: animation-to-height;
+    animation-duration: 0.2s;
+}
+
+@keyframes animation-to-top {
+    from {top: 776px}
+}
+
+@keyframes animation-to-height {
+    from {height: 0px}
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
